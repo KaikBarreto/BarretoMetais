@@ -1,3 +1,6 @@
+$light-blue: #65DAF9;
+$header-nav-bg: #353d41;
+
 // Gerais
 
 body {
@@ -22,7 +25,7 @@ li {
 
 header,
 .navbar {
-    background: #353d41;
+    background: $header-nav-bg;
 }
 
 #nav-container {
@@ -36,7 +39,6 @@ header,
 
 .navbar-brand {
     padding: 0;
-    padding-left: 15px;
     color: #fff;
 
     &:hover {
@@ -88,7 +90,7 @@ header,
 }
 
 .main-btn {
-    background: #65daf9;
+    background: $light-blue;
     color: #fff;
     text-transform: uppercase;
     width: 200px;
@@ -102,12 +104,12 @@ header,
         text-decoration: none;
         color: #fff;
         background: transparent;
-        border-color: #65daf9;
+        border-color: $light-blue;
     }
 }
 
 .carousel-indicators {
     .active {
-        background: #65daf9;
+        background: $light-blue;
     }
 }

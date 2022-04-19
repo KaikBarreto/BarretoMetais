@@ -32,7 +32,6 @@ header,
 
 .navbar-brand {
   padding: 0;
-  padding-left: 15px;
   color: #fff;
 }
 
@@ -74,7 +73,7 @@ header,
 }
 
 .main-btn {
-  background: #65daf9;
+  background: #65DAF9;
   color: #fff;
   text-transform: uppercase;
   width: 200px;
@@ -90,10 +89,10 @@ header,
   text-decoration: none;
   color: #fff;
   background: transparent;
-  border-color: #65daf9;
+  border-color: #65DAF9;
 }
 
 .carousel-indicators .active {
-  background: #65daf9;
+  background: #65DAF9;
 }
 /*# sourceMappingURL=styles.css.map */
