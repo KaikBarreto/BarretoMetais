@@ -113,3 +113,75 @@ header,
         background: $light-blue;
     }
 }
+
+//  About the company
+
+#about-area {
+    background: #F9F9F9;
+}
+
+.main-title {
+    color: #444;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+
+    &::after {
+        content: "";
+        border-top: 2px solid #333;
+        width: 15%;
+        position: absolute;
+        top: 60px;
+        left: 42.5%;
+    }
+}
+
+.about-title {
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#about-list {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        line-height: 30px;
+    }
+
+    i {
+        color: $light-blue;
+        margin-right: 15px;
+    }
+}
+
+// Services
+
+.service-box {
+    text-align: center;
+    margin-bottom: 50px;
+
+
+    i, h4 {
+        transition: .5s;
+    }
+
+    i {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #444;
+    }
+
+    h4 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    &:hover {
+        i, h4 {
+            color: $light-blue;
+        }
+    }
+}
