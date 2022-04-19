@@ -10,11 +10,6 @@ body {
   padding: 70px 0;
 }
 
-#carousel-fluid {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 p,
 li {
   color: #444;
@@ -51,5 +46,54 @@ header,
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 1rem 0.8rem;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+#mainSlider .carousel-inner,
+#mainSlider .carousel-item {
+  height: 90vh;
+}
+
+#mainSlider .carousel-caption {
+  top: 30%;
+}
+
+#mainSlider .carousel-caption h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+#mainSlider .carousel-caption p {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 100px;
+  color: #fff;
+}
+
+.main-btn {
+  background: #65daf9;
+  color: #fff;
+  text-transform: uppercase;
+  width: 200px;
+  height: 60px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 3px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-btn:hover {
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  border-color: #65daf9;
+}
+
+.carousel-indicators .active {
+  background: #65daf9;
 }
 /*# sourceMappingURL=styles.css.map */

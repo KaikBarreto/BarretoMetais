@@ -12,11 +12,6 @@ body {
     padding: 70px 0;
 }
 
-#carousel-fluid {
-    padding-left: 0;
-    padding-right: 0;
-}
-
 p,
 li {
     color: #444;
@@ -60,5 +55,59 @@ header,
         .nav-link {
             padding: 1rem 0.8rem;
         }
+    }
+}
+
+// Slider
+
+.container-fluid {
+    padding: 0;
+}
+
+#mainSlider {
+    .carousel-inner,
+    .carousel-item {
+        height: 90vh;
+    }
+
+    .carousel-caption {
+        top: 30%;
+
+        h2 {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 22px;
+            font-weight: 300;
+            margin-bottom: 100px;
+            color: #fff;
+        }
+    }
+}
+
+.main-btn {
+    background: #65daf9;
+    color: #fff;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: 0.5s;
+
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+        background: transparent;
+        border-color: #65daf9;
+    }
+}
+
+.carousel-indicators {
+    .active {
+        background: #65daf9;
     }
 }
