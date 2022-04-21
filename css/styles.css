@@ -1,3 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: 70px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -276,6 +284,7 @@ header,
 
 #portfolio-area .main-btn {
   outline: none;
+  cursor: pointer;
 }
 
 #portfolio-area .filter-btn {
@@ -308,9 +317,7 @@ header,
 }
 
 #email-input {
-  border-radius: 0;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-radius: 25px;
   border: 1px solid #65daf9;
   display: inline;
   -webkit-box-sizing: border-box;
@@ -400,15 +407,15 @@ header,
   transition: 0.5s;
 }
 
-.contact-box p {
-  font-size: 16px;
-}
-
-.contact-box:hover i {
+.contact-box i:hover {
   -webkit-transform: scale(1.35);
           transform: scale(1.35);
   color: #65daf9;
   border-color: #65daf9;
+}
+
+.contact-box p {
+  font-size: 16px;
 }
 
 .contact-title {
@@ -451,6 +458,8 @@ header,
 #copy-area .container a {
   font-weight: bold;
   color: #444;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
 }
 
 #copy-area .container a:hover {

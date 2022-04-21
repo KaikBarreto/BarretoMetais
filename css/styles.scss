@@ -3,6 +3,14 @@ $header-nav-bg: #353d41;
 
 // Gerais
 
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+    scroll-margin-top: 70px;
+}
+
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -306,6 +314,7 @@ header,
 
     .main-btn {
         outline: none;
+        cursor: pointer;
     }
 
     .filter-btn {
@@ -342,9 +351,7 @@ header,
 }
 
 #email-input {
-    border-radius: 0;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 25px;
     border: 1px solid $light-blue;  
     display: inline;
     box-sizing: border-box;
@@ -432,18 +439,16 @@ header,
         font-size: 24px;
         margin-bottom: 20px;
         transition: 0.5s;
-    }
 
-    p {
-        font-size: 16px;
-    }
-
-    &:hover {
-        i {
+        &:hover {
             transform: scale(1.35);
             color: $light-blue;
             border-color: $light-blue;
         }
+    }
+
+    p {
+        font-size: 16px;
     }
 }
 
@@ -493,6 +498,7 @@ header,
         a {
             font-weight: bold;
             color: #444;
+            transition: 0.35s;
 
             &:hover {
                 text-decoration: none;
