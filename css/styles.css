@@ -73,7 +73,7 @@ header,
 }
 
 .main-btn {
-  background: #65DAF9;
+  background: #65daf9;
   color: #fff;
   text-transform: uppercase;
   width: 200px;
@@ -89,15 +89,15 @@ header,
   text-decoration: none;
   color: #fff;
   background: transparent;
-  border-color: #65DAF9;
+  border-color: #65daf9;
 }
 
 .carousel-indicators .active {
-  background: #65DAF9;
+  background: #65daf9;
 }
 
 #about-area {
-  background: #F9F9F9;
+  background: #f9f9f9;
 }
 
 .main-title {
@@ -133,7 +133,7 @@ header,
 }
 
 #about-list i {
-  color: #65DAF9;
+  color: #65daf9;
   margin-right: 15px;
 }
 
@@ -142,9 +142,10 @@ header,
   margin-bottom: 50px;
 }
 
-.service-box i, .service-box h4 {
-  -webkit-transition: .5s;
-  transition: .5s;
+.service-box i,
+.service-box h4 {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .service-box i {
@@ -158,7 +159,58 @@ header,
   margin-bottom: 20px;
 }
 
-.service-box:hover i, .service-box:hover h4 {
-  color: #65DAF9;
+.service-box:hover i,
+.service-box:hover h4 {
+  color: #65daf9;
+}
+
+.circle-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.circle-box div {
+  padding: 0 40px;
+}
+
+.circle-box svg {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.progressbar-text {
+  font-weight: bold;
+  font-size: 32px;
+  position: absolute !important;
+  top: 200px !important;
+  left: 130px !important;
+}
+
+#data-area p {
+  color: #fff;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+#circleC {
+  top: 15px;
+}
+
+#circleC .progressbar-text {
+  top: 160px !important;
+  left: 130px !important;
+}
+
+.card-body {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

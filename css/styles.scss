@@ -1,4 +1,4 @@
-$light-blue: #65DAF9;
+$light-blue: #65daf9;
 $header-nav-bg: #353d41;
 
 // Gerais
@@ -117,7 +117,7 @@ header,
 //  About the company
 
 #about-area {
-    background: #F9F9F9;
+    background: #f9f9f9;
 }
 
 .main-title {
@@ -163,9 +163,9 @@ header,
     text-align: center;
     margin-bottom: 50px;
 
-
-    i, h4 {
-        transition: .5s;
+    i,
+    h4 {
+        transition: 0.5s;
     }
 
     i {
@@ -180,8 +180,58 @@ header,
     }
 
     &:hover {
-        i, h4 {
+        i,
+        h4 {
             color: $light-blue;
         }
     }
+}
+
+// Company Data
+
+.circle-box {
+    display: flex;
+    align-items: center;
+
+    div {
+        padding: 0 40px;
+    }
+
+    svg {
+        align-self: center;
+    }
+}
+
+.progressbar-text {
+    font-weight: bold;
+    font-size: 32px;
+
+    position: absolute !important;
+    top: 200px !important;
+    left: 130px !important;
+}
+
+#data-area {
+    p {
+        color: #fff;
+        text-align: center;
+        align-self: center;
+        font-size: 26px;
+        margin-top: 20px;
+    }
+}
+
+#circleC {
+    top: 15px;
+
+    .progressbar-text {
+        top: 160px !important;
+        left: 130px !important;
+    }
+}
+
+// Time
+
+.card-body {
+    text-align: center;
 }
