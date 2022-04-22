@@ -4,7 +4,7 @@ $header-nav-bg: #353d41;
 // Gerais
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 :target {
@@ -198,43 +198,22 @@ header,
 // Company Data
 
 .circle-box {
-    display: flex;
-    align-items: center;
-
     div {
         padding: 0 40px;
-    }
-
-    svg {
-        align-self: center;
     }
 }
 
 .progressbar-text {
     font-weight: bold;
     font-size: 32px;
-
-    position: absolute !important;
-    top: 200px !important;
-    left: 130px !important;
 }
 
 #data-area {
     p {
         color: #fff;
         text-align: center;
-        align-self: center;
         font-size: 26px;
         margin-top: 20px;
-    }
-}
-
-#circleC {
-    top: 15px;
-
-    .progressbar-text {
-        top: 160px !important;
-        left: 130px !important;
     }
 }
 
@@ -311,7 +290,6 @@ header,
 }
 
 #portfolio-area {
-
     .main-btn {
         outline: none;
         cursor: pointer;
@@ -342,7 +320,7 @@ header,
 
 #news-area {
     text-align: center;
-    background: #F9F9F9;
+    background: #f9f9f9;
 
     p {
         font-size: 18px;
@@ -352,7 +330,7 @@ header,
 
 #email-input {
     border-radius: 25px;
-    border: 1px solid $light-blue;  
+    border: 1px solid $light-blue;
     display: inline;
     box-sizing: border-box;
     width: 40%;
@@ -365,7 +343,7 @@ header,
     border: 1px solid $light-blue;
     background: $light-blue;
     text-transform: uppercase;
-    color: #FFF;
+    color: #fff;
     height: 40px;
     padding: 0 30px;
     margin-left: -130px;
@@ -373,7 +351,7 @@ header,
     transition: 0.5s;
 
     &:hover {
-        background: #FFF;
+        background: #fff;
         color: $light-blue;
     }
 }
@@ -383,7 +361,7 @@ header,
 #call-area {
     background: $light-blue;
     text-transform: uppercase;
-    
+
     .container {
         padding: 40px 100px;
     }
@@ -394,7 +372,7 @@ header,
     }
 
     p {
-        color: #FFF;
+        color: #fff;
         font-weight: bold;
         font-size: 20px;
         width: auto;
@@ -406,7 +384,7 @@ header,
     }
 
     #call-btn {
-        background: #FFF;
+        background: #fff;
         color: $light-blue;
         font-weight: bold;
         font-size: 20px;
@@ -427,7 +405,7 @@ header,
 .contact-box {
     padding-bottom: 50px;
     margin-bottom: 50px;
-    border-bottom: 1px solid #3EC1D5;
+    border-bottom: 1px solid #3ec1d5;
 
     i {
         color: #444;
@@ -454,7 +432,7 @@ header,
 
 .contact-title {
     font-weight: bold;
-    color: #3EC1D5;
+    color: #3ec1d5;
 }
 
 #msg-box {
@@ -465,7 +443,8 @@ header,
 
 #contact-form {
     input {
-        &[type="text"], &[type="email"] {
+        &[type="text"],
+        &[type="email"] {
             margin-bottom: 15px;
             border-radius: 0;
         }
@@ -477,7 +456,7 @@ header,
         margin-top: 15px;
 
         &:hover {
-            color: #3EC1D5;
+            color: #3ec1d5;
         }
     }
 }
@@ -502,8 +481,232 @@ header,
 
             &:hover {
                 text-decoration: none;
-                color: #3EC1D5;
+                color: #3ec1d5;
             }
         }
+    }
+}
+
+// Responsivity
+
+//  Tablets
+
+@media (max-width: 768px) {
+    // Geral
+
+    .container {
+        padding: 20px 0;
+    }
+
+    // Slider
+
+    #mainSlider {
+        .carousel-inner,
+        .carousel-item {
+            height: auto;
+        }
+
+        .carousel-caption {
+            left: 10%;
+            right: 10%;
+
+            h2 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 18px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    // About
+
+    #about-area {
+        img {
+            margin-top: 100px;
+        }
+    }
+
+    // Data
+    .circle-box {
+        div {
+            padding: 0 10px;
+        }
+    }
+
+    #data-area {
+        p {
+            font-size: 16px;
+        }
+    }
+
+    // Team
+    .card-title {
+        font-size: 14px;
+    }
+    .card-text {
+        font-size: 12px;
+    }
+
+    // Apply
+    #apply-area {
+        .apply-box {
+            padding: 50px 25px;
+        }
+    }
+
+    // News
+    #news-area {
+        p {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    #email-input {
+        width: 70%;
+    }
+
+    #call-area {
+        margin-top: 30px;
+
+        .container {
+            padding: 30px;
+        }
+
+        p,
+        #call-btn {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    // Slider
+
+    .main-title {
+        font-size: 30px;
+        margin-top: 30px;
+
+        &::after {
+            margin-top: 30px;
+        }
+    }
+
+    #mainSlider {
+        margin-top: 90px;
+
+        .carousel-caption {
+            top: 5%;
+
+            h2 {
+                font-size: 18px;
+                margin-bottom: 40px;
+            }
+
+            p {
+                display: none;
+            }
+
+            .main-btn {
+                font-size: 14px;
+            }
+        }
+    }
+
+    // About
+    #about-area {
+        img {
+            width: 95%;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+    }
+
+    // Data-area
+    .circle-box {
+        width: 50%;
+
+        &:nth-child(1),
+        &:nth-child(2) {
+            margin-bottom: 30px;
+        }
+    }
+
+    // Team
+    #team-area {
+        .card-title {
+            font-size: 18px;
+        }
+
+        .col-md-3 {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+
+    // apply
+    #apply-area {
+        height: auto;
+    }
+
+    #company-img {
+        display: none;
+    }
+
+    // Filter
+    #portfolio-area {
+        .filter-btn {
+            margin-bottom: 20px;
+        }
+
+        .project-box {
+            width: 50%;
+        }
+    }
+
+    // News
+    #news-area {
+        .main-title {
+            font-size: 24px;
+
+            &::after {
+                margin-top: 0;
+            }
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    #email-input {
+        width: 85%;
+    }
+
+    // Call-to-action
+    #call-area {
+        .container,
+        .row {
+            padding: 10px;
+        }
+
+        p,
+        #call-btn {
+            font-size: 14px;
+            letter-spacing: 0;
+            margin: 0;
+            width: 50%;
+        }
+    }
+
+    // Contact
+    .contact-box {
+        border: none;
+        margin-bottom: 0;
+        margin-top: 0;
     }
 }
