@@ -83,16 +83,32 @@ header,
     .carousel-caption {
         top: 30%;
 
+        letter-spacing: 0.7px;
+
         h2 {
-            font-size: 50px;
+            font-family: "Akshar", sans-serif;
+            font-size: 70px;
             margin-bottom: 30px;
         }
 
         p {
-            font-size: 22px;
+            font-size: 30px;
             font-weight: 300;
-            margin-bottom: 100px;
+            margin-bottom: 60px;
             color: #fff;
+        }
+    }
+
+    .carousel-item {
+        img {
+            opacity: 0.9;
+            transition: 0.7s;
+        }
+
+        &:hover {
+            img {
+                opacity: 1;
+            }
         }
     }
 }

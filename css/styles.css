@@ -66,18 +66,30 @@ header,
 
 #mainSlider .carousel-caption {
   top: 30%;
+  letter-spacing: 0.7px;
 }
 
 #mainSlider .carousel-caption h2 {
-  font-size: 50px;
+  font-family: "Akshar", sans-serif;
+  font-size: 70px;
   margin-bottom: 30px;
 }
 
 #mainSlider .carousel-caption p {
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 300;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   color: #fff;
+}
+
+#mainSlider .carousel-item img {
+  opacity: 0.9;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+#mainSlider .carousel-item:hover img {
+  opacity: 1;
 }
 
 .main-btn {
