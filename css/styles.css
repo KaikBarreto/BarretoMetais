@@ -26,7 +26,8 @@ li {
 
 header,
 .navbar {
-  background-image: linear-gradient(135deg, #353d41, #313638);
+  background: -webkit-gradient(linear, left top, right top, from(#003f74), to(#0076d0));
+  background: linear-gradient(90deg, #003f74 0%, #0076d0 100%);
 }
 
 #nav-container {
@@ -60,7 +61,7 @@ header,
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-  background: #404a4f;
+  background: #171f53;
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
 }
@@ -133,7 +134,7 @@ header,
 .main-title {
   color: #444;
   margin: 0 0 65px 0;
-  font-size: 40px;
+  font-size: 46px;
   text-align: center;
 }
 
@@ -163,7 +164,7 @@ header,
 }
 
 #about-list i {
-  color: #65daf9;
+  color: #76b041;
   margin-right: 15px;
 }
 
@@ -195,31 +196,30 @@ header,
 
 .service-box:hover i,
 .service-box:hover h4 {
-  color: #65daf9;
+  color: #76b041;
 }
 
-.circle-box div {
-  padding: 0 40px;
+#recycle-info p {
+  font-size: 20px;
+  color: #444;
 }
 
-.progressbar-text {
+#recycle-info .recy-title {
+  font-family: "Akshar", sans-serif;
+  font-size: 48px;
   font-weight: bold;
-  font-size: 32px;
+  letter-spacing: 1px;
 }
 
-#data-area p {
-  color: #fff;
-  text-align: center;
-  font-size: 26px;
-  margin-top: 20px;
-}
-
-.card-body {
-  text-align: center;
+#recycle-info #ciclo-reciclagem {
+  background-image: url("../img/recycling.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
 }
 
 #apply-area {
-  height: 500px;
+  height: 520px;
 }
 
 #apply-area .container-fluid,
@@ -229,31 +229,34 @@ header,
 
 #apply-area .apply-box {
   text-align: center;
-  padding: 70px 50px;
+  padding: 60px 50px;
 }
 
-#company-img {
+#apply-area #company-img {
   background-image: url("../img/empresa.jpg");
   background-size: cover;
   height: 100%;
 }
 
-#pattern-img h4,
-#pattern-img p {
+#apply-area #pattern-img h4,
+#apply-area #pattern-img p {
   color: #fff;
 }
 
-#pattern-img h4 {
+#apply-area #pattern-img h4 {
+  font-family: "Akshar", sans-serif;
+  font-size: 3.5em;
   margin-top: 8%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-transform: uppercase;
 }
 
-#pattern-img p {
+#apply-area #pattern-img p {
+  font-size: 16px;
   margin-bottom: 20px;
 }
 
-#apply-btn {
+#apply-area #apply-btn {
   display: block;
   height: auto;
   width: 180px;
@@ -264,82 +267,9 @@ header,
   border-color: #fff;
 }
 
-#apply-btn:hover {
+#apply-area #apply-btn:hover {
   border-color: #65daf9;
   background-color: #65daf9;
-}
-
-.project-box {
-  margin-bottom: 30px;
-}
-
-#filter-btn-box {
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-#portfolio-area .main-btn {
-  outline: none;
-  cursor: pointer;
-}
-
-#portfolio-area .filter-btn {
-  color: #444;
-  border: 1px solid #444;
-  background-color: transparent;
-  text-transform: none;
-  margin: 0 15px;
-  min-width: 100px;
-  width: auto;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 20px;
-}
-
-#portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover {
-  color: #fff;
-  background-color: #65daf9;
-  border-color: #65daf9;
-}
-
-#news-area {
-  text-align: center;
-  background: #f9f9f9;
-}
-
-#news-area p {
-  font-size: 18px;
-  margin-bottom: 40px;
-}
-
-#email-input {
-  border-radius: 25px;
-  border: 1px solid #65daf9;
-  display: inline;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 40%;
-  height: 40px;
-}
-
-#news-btn {
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border: 1px solid #65daf9;
-  background: #65daf9;
-  text-transform: uppercase;
-  color: #fff;
-  height: 40px;
-  padding: 0 30px;
-  margin-left: -130px;
-  position: absolute;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-#news-btn:hover {
-  background: #fff;
-  color: #65daf9;
 }
 
 #call-area {
@@ -423,9 +353,17 @@ header,
   font-size: 22px;
 }
 
-#contact-form input[type="text"], #contact-form input[type="email"] {
-  margin-bottom: 15px;
+#contact-form .form-control {
+  margin-bottom: 20px;
   border-radius: 0;
+}
+
+#contact-form label {
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Akshar", sans-serif;
+  margin-right: 90%;
 }
 
 #contact-form .main-btn {
@@ -436,6 +374,15 @@ header,
 
 #contact-form .main-btn:hover {
   color: #3ec1d5;
+}
+
+#confirmation-text {
+  font-size: 36px;
+  color: #76b041;
+  margin-top: 70px;
+  display: none;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 #copy-area {

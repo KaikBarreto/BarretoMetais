@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Barreto Metais - O mundo mais limpo</title>
+    <title>Barreto Metais - O planeta mais limpo</title>
 
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,14 +30,12 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
-    <!-- ProgressBar -->
-    <script src="js/progressbar.min.js"></script>
     <!-- Parallax -->
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 
     <!-- Favicon -->
 
-    <link rel="shortcut icon" href="img/hdcagency_logo.svg">
+    <link rel="shortcut icon" href="img/favicon.ico">
 
 </head>
 
@@ -46,7 +44,7 @@
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
                 <a href="#" class="navbar-brand">
-                    <img id="logo" src="img/hdcagency_logo.svg" alt="Barreto Metais Logo"> Barreto Metais
+                    <img id="logo" src="img/logo-png.png" alt="Barreto Metais Logo"> Barreto Metais
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
                     aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,7 +76,7 @@
                         <div class="carousel-caption d-md-block">
                             <h2>Você sabe o que é reciclagem?</h2>
                             <p>Trata-se de muito mais do que apenas separar algumas garrafas</p>
-                            <a href="#" class="main-btn">Saiba mais</a>
+                            <a href="#recycle-info" class="main-btn">Saiba mais</a>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -87,7 +85,7 @@
                             <h2>Meio ambiente</h2>
                             <p>As cooperativas de reciclagem contribuem diretamente para o cuidado com o meio ambiente
                             </p>
-                            <a href="#" class="main-btn">Conhecer iniciativa</a>
+                            <a href="#about-area" class="main-btn">Conhecer iniciativa</a>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -96,7 +94,7 @@
                             <h2>Quem somos?</h2>
                             <p>A Barreto Metais é uma empresa com uma filosofia de profissionalismo e ética ambiental.
                             </p>
-                            <a href="#" class="main-btn">Entrar em contato</a>
+                            <a href="#contact-area" class="main-btn">Entrar em contato</a>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
@@ -138,6 +136,43 @@
                 </div>
             </div>
         </div>
+        <!-- A reciclagem -->
+        <div id="recycle-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="main-title">A reciclagem</h3>
+                    </div>
+                    <div class="col-md-5">
+                        <h4 class="recy-title">O que é?</h4>
+                        <p>Ao processo de reintroduzir um elemento na cadeia de produção dá-se o nome de reciclagem.</p>
+                        <h4 class="recy-title">Qual é sua importância?</h4>
+                        <p>Quanto mais se recicla, mais diminuirão os custos com limpeza urbana, além de evitar a
+                            poluição reduzindo as emissões de gases de efeito estufa que provocam a mudança climática
+                            global, mantendo o Meio Ambiente sustentável para as gerações futuras.</p>
+                    </div>
+                    <div class="col-md-7 apply-box" id="ciclo-reciclagem"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Chamada com parallax -->
+        <div id="apply-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 apply-box" id="company-img"></div>
+                    <div class="col-md-6 apply-box" id="pattern-img">
+                        <h4>Quer ajudar o planeta?</h4>
+                        <p>Podemos ajudar a você e seu negócio a tornarem o mundo <br>um lugar mais limpo e sustentável.
+                        </p>
+                        <p>Clique no botão abaixo e consulte se nossos serviços estão <br>disponíveis na sua localidade.
+                        </p>
+                        <p>Assim você terá a praticidade de reciclar sem toda a parte logística,<br> deixe isto conosco.
+                        </p>
+                        <a href="#contact-area" class="main-btn" id="apply-btn">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Serviços da empresa -->
         <div id="services-area">
             <div class="container">
@@ -163,7 +198,9 @@
                         <p>Ferro é o metal mais utilizado no mundo, sendo o quarto mais abundante em massa na crosta
                             terrestre. Seus usos são muito amplos, sendo essencial para a economia e sociedade.</p>
                     </div>
-                    <div class="col-md-2 service-box"><!-- BLANK SPACE ---></div>
+                    <div class="col-md-2 service-box">
+                        <!-- BLANK SPACE --->
+                    </div>
                     <div class="col-md-4 service-box">
                         <i class="fas fa-recycle"></i>
                         <h4>Lata</h4>
@@ -176,70 +213,18 @@
                         <p>A reciclagem do alumínio, material de aspecto metálico branco, é o processo pelo qual este
                             pode ser reutilizado em determinados produtos, após ter sido inicialmente produzido.</p>
                     </div>
-                    <div class="col-md-2 service-box"><!-- BLANK SPACE ---></div>
+                    <div class="col-md-2 service-box">
+                        <!-- BLANK SPACE --->
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Dados da empresa -->
-        <div id="data-area">
+        <!--  Call to action-->
+        <div id="call-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-xs-6 circle-box">
-                        <div id="circleA"></div>
-                        <p>Projetos entregues</p>
-                    </div>
-                    <div class="col-md-3 col-xs-6 circle-box">
-                        <div id="circleB"></div>
-                        <p>Clientes Felizes</p>
-                    </div>
-                    <div class="col-md-3 col-xs-6 circle-box">
-                        <div id="circleC"></div>
-                        <p>Colaboradores</p>
-                    </div>
-                    <div class="col-md-3 col-xs-6 circle-box">
-                        <div id="circleD"></div>
-                        <p>Cafézinhos</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Work with us -->
-        <div id="apply-area">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 apply-box" id="company-img"></div>
-                    <div class="col-md-6 apply-box" id="pattern-img">
-                        <h4>Gosta de desafios?</h4>
-                        <p>Temos várias posições abertas, entre elas: Software Engineer, UI/UX Designer, Product
-                            Manager e mais.</p>
-                        <p>Clique no botão abaixo e confira os benefícios e as posições em aberto.</p>
-                        <p>Aqui você terá a chance de trabalhar com as melhores tecnologias e os profissionais mais
-                            capacitados.</p>
-                        <a href="#" class="main-btn" id="apply-btn">Saiba Mais</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Newsletter & Call to action-->
-        <div id="news-area">
-            <div class="container">
-                <div class="col-md-12">
-                    <h3 class="main-title">Fique por dentro das novidades</h3>
-                </div>
-                <p>Deixe aqui o seu email para que possamos te informar de tudo que há de novo no mundo da reciclagem.</p>
-                <form action="">
-                    <input type="email" class="form-control" name="email" id="email-input"
-                        placeholder="Seu melhor e-mail">
-                    <input type="submit" id="news-btn" value="Inscrever">
-                </form>
-            </div>
-            <!-- Call to action -->
-            <div id="call-area">
-                <div class="container">
-                    <div class="row">
-                        <p>Deseja fazer uma consulta sem compromisso?</p>
-                        <button class="main-btn" id="call-btn">Consultar</button>
-                    </div>
+                    <p>Deseja fazer uma consulta sem compromisso?</p>
+                    <a href="#msg-box" class="main-btn" id="call-btn">Consultar</a>
                 </div>
             </div>
         </div>
@@ -269,15 +254,22 @@
                         <p><span class="contact-title">Venha tomar um café</span> <br>Estrada Boa Esperança - 37</p>
                     </div>
                     <div class="col-md-6" id="msg-box">
-                        <p>Ou nos deixe uma mensagem:</p>
+                        <p>Ou nos deixe uma mensagem para que contatemos de volta:</p>
+
+                        <h4 id="confirmation-text">Seus dados foram recebidos com sucesso!</h4>
                     </div>
                     <div class="col-md-6" id="contact-form">
-                        <form action="">
-                            <input type="email" class="form-control" placeholder="E-mail" name="email">
-                            <input type="text" class="form-control" placeholder="Assunto" name="subject">
-                            <textarea class="form-control" rows="3" placeholder="Sua mensagem..."
-                                name="message"></textarea>
-                            <input class="main-btn" type="submit" value="Enviar">
+                        <form action="https://formsubmit.co/fe736fdd8ca4920a82edeb7185a0e7c6" method="POST">
+                            <label for="nameinput">Nome</label>
+                            <input type="text" class="form-control" placeholder="Ex.: Kaik Barreto" name="Nome" id="nameinput">
+                            <label for="phoneinput">Telefone</label>
+                            <input type="phone" class="form-control" placeholder="(xx) 9xxxx-xxxx" name="phone-number"
+                                id="phoneinput">
+                            <label for="msginput">Mensagem</label>
+                            <textarea class="form-control" rows="3" placeholder="Ex.: Eu gostaria de conhecer melhor a sua empresa e receber informações." name="Mensagem"
+                                id="msginput"></textarea>
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+                            <button class="main-btn" type="submit">Enviar</button>
                         </form>
                     </div>
                 </div>

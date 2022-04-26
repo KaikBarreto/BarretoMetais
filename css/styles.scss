@@ -1,5 +1,7 @@
 $light-blue: #65daf9;
-$header-nav-bg: #353d41;
+$dark-blue: #1c2667;
+$green: #76b041;
+$medium-blue: #054ce0;
 
 // Gerais
 
@@ -33,7 +35,7 @@ li {
 
 header,
 .navbar {
-    background-image:linear-gradient(135deg,$header-nav-bg, #313638);
+    background: linear-gradient(90deg, rgba(0, 63, 116, 1) 0%, rgba(0, 118, 208, 1) 100%);
 }
 
 #nav-container {
@@ -70,7 +72,7 @@ header,
             transition: 0.7s;
 
             &:hover {
-                background: lighten($header-nav-bg, 5);
+                background: darken($dark-blue, 5);
                 transform: scale(1.08);
             }
         }
@@ -156,7 +158,7 @@ header,
 .main-title {
     color: #444;
     margin: 0 0 65px 0;
-    font-size: 40px;
+    font-size: 46px;
     text-align: center;
 
     &::after {
@@ -185,7 +187,7 @@ header,
     }
 
     i {
-        color: $light-blue;
+        color: $green;
         margin-right: 15px;
     }
 }
@@ -219,43 +221,39 @@ header,
     &:hover {
         i,
         h4 {
-            color: $light-blue;
+            color: $green;
         }
     }
 }
 
-// Company Data
+// About recycling
 
-.circle-box {
-    div {
-        padding: 0 40px;
-    }
-}
-
-.progressbar-text {
-    font-weight: bold;
-    font-size: 32px;
-}
-
-#data-area {
+#recycle-info {
     p {
-        color: #fff;
-        text-align: center;
-        font-size: 26px;
-        margin-top: 20px;
+        font-size: 20px;
+        color: #444;
     }
-}
 
-// Team cards
+    .recy-title {
+        font-family: "Akshar", sans-serif;
+        font-size: 48px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
 
-.card-body {
-    text-align: center;
+    #ciclo-reciclagem {
+        background-image: url("../img/recycling.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        height: 500px;
+    }
 }
 
 // Work with us
 
 #apply-area {
-    height: 500px;
+    height: 520px;
 
     .container-fluid,
     .row {
@@ -264,126 +262,52 @@ header,
 
     .apply-box {
         text-align: center;
-        padding: 70px 50px;
-    }
-}
-
-#company-img {
-    background-image: url("../img/empresa.jpg");
-    background-size: cover;
-    height: 100%;
-}
-
-#pattern-img {
-    h4,
-    p {
-        color: #fff;
+        padding: 60px 50px;
     }
 
-    h4 {
-        margin-top: 8%;
-        margin-bottom: 20px;
-        text-transform: uppercase;
+    #company-img {
+        background-image: url("../img/empresa.jpg");
+        background-size: cover;
+        height: 100%;
     }
 
-    p {
-        margin-bottom: 20px;
-    }
-}
-
-#apply-btn {
-    display: block;
-    height: auto;
-    width: 180px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    background-color: transparent;
-    border-color: #fff;
-
-    &:hover {
-        border-color: $light-blue;
-        background-color: $light-blue;
-    }
-}
-
-// Portfolio
-
-.project-box {
-    margin-bottom: 30px;
-}
-
-#filter-btn-box {
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-#portfolio-area {
-    .main-btn {
-        outline: none;
-        cursor: pointer;
-    }
-
-    .filter-btn {
-        color: #444;
-        border: 1px solid #444;
-        background-color: transparent;
-        text-transform: none;
-        margin: 0 15px;
-        min-width: 100px;
-        width: auto;
-        height: 40px;
-        line-height: 40px;
-        padding: 0 20px;
-
-        &.active,
-        &:hover {
+    #pattern-img {
+        h4,
+        p {
             color: #fff;
-            background-color: $light-blue;
+        }
+
+        h4 {
+            font-family: "Akshar", sans-serif;
+            font-size: 3.5em;
+            margin-top: 8%;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    }
+
+    #apply-btn {
+        display: block;
+        height: auto;
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        background-color: transparent;
+        border-color: #fff;
+
+        &:hover {
             border-color: $light-blue;
+            background-color: $light-blue;
         }
     }
 }
 
-// Newsletter
-
-#news-area {
-    text-align: center;
-    background: #f9f9f9;
-
-    p {
-        font-size: 18px;
-        margin-bottom: 40px;
-    }
-}
-
-#email-input {
-    border-radius: 25px;
-    border: 1px solid $light-blue;
-    display: inline;
-    box-sizing: border-box;
-    width: 40%;
-    height: 40px;
-}
-
-#news-btn {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border: 1px solid $light-blue;
-    background: $light-blue;
-    text-transform: uppercase;
-    color: #fff;
-    height: 40px;
-    padding: 0 30px;
-    margin-left: -130px;
-    position: absolute;
-    transition: 0.5s;
-
-    &:hover {
-        background: #fff;
-        color: $light-blue;
-    }
-}
 
 // Call to action
 
@@ -471,13 +395,18 @@ header,
 }
 
 #contact-form {
-    input {
-        &[type="text"],
-        &[type="email"] {
-            margin-bottom: 15px;
-            border-radius: 0;
-        }
+    .form-control {
+        margin-bottom: 20px;
+        border-radius: 0;
     }
+
+    label {
+            text-align: left;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: "Akshar", sans-serif;
+            margin-right: 90%;
+        }
 
     .main-btn {
         width: 120px;
@@ -488,6 +417,14 @@ header,
             color: #3ec1d5;
         }
     }
+}
+
+#confirmation-text {
+    font-size: 36px;
+    color: $green;
+    margin-top: 70px;
+    display: none;
+    transition: 1s;
 }
 
 // Copy
