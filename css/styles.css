@@ -26,7 +26,7 @@ li {
 
 header,
 .navbar {
-  background: #353d41;
+  background-image: linear-gradient(135deg, #353d41, #313638);
 }
 
 #nav-container {
@@ -39,6 +39,8 @@ header,
 }
 
 .navbar-brand {
+  font-size: 2rem;
+  font-family: "Akshar", sans-serif;
   padding: 0;
   color: #fff;
 }
@@ -53,6 +55,14 @@ header,
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 1rem 0.8rem;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  background: #404a4f;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
 
 .container-fluid {
@@ -159,7 +169,7 @@ header,
 
 .service-box {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 .service-box i,
@@ -175,8 +185,12 @@ header,
 }
 
 .service-box h4 {
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 20px;
+}
+
+.service-box p {
+  font-size: 16px;
 }
 
 .service-box:hover i,
