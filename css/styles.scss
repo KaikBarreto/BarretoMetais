@@ -265,13 +265,8 @@ header,
         padding: 60px 50px;
     }
 
-    #company-img {
-        background-image: url("../img/empresa.jpg");
-        background-size: cover;
-        height: 100%;
-    }
-
     #pattern-img {
+
         h4,
         p {
             color: #fff;
@@ -396,7 +391,7 @@ header,
 
 #contact-form {
     .form-control {
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         border-radius: 0;
     }
 
@@ -418,15 +413,6 @@ header,
         }
     }
 }
-
-#confirmation-text {
-    font-size: 36px;
-    color: $green;
-    margin-top: 70px;
-    display: none;
-    transition: 1s;
-}
-
 // Copy
 
 #copy-area {

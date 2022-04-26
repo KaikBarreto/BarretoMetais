@@ -232,12 +232,6 @@ header,
   padding: 60px 50px;
 }
 
-#apply-area #company-img {
-  background-image: url("../img/empresa.jpg");
-  background-size: cover;
-  height: 100%;
-}
-
 #apply-area #pattern-img h4,
 #apply-area #pattern-img p {
   color: #fff;
@@ -354,7 +348,7 @@ header,
 }
 
 #contact-form .form-control {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   border-radius: 0;
 }
 
@@ -374,15 +368,6 @@ header,
 
 #contact-form .main-btn:hover {
   color: #3ec1d5;
-}
-
-#confirmation-text {
-  font-size: 36px;
-  color: #76b041;
-  margin-top: 70px;
-  display: none;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 #copy-area {
