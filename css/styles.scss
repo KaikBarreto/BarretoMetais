@@ -15,14 +15,16 @@ html {
 
 body {
     font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
 }
 
 .row {
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .container {
-    padding: 70px 0;
+    padding: 70px 0px !important;
 }
 
 p,
@@ -36,26 +38,41 @@ li {
 header,
 .navbar {
     background: linear-gradient(90deg, rgba(0, 63, 116, 1) 0%, rgba(0, 118, 208, 1) 100%);
-}
-
-#nav-container {
-    padding-top: 0;
-    padding-bottom: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border-bottom: 3px solid $light-blue;
 }
 
 #logo {
-    width: 75px;
+    width: 60px;
+    height: 60px;
+}
+
+#nav-container {
+    padding: 0 !important;
 }
 
 .navbar-brand {
     font-size: 2rem;
     font-family: "Akshar", sans-serif;
 
-    padding: 0;
+    padding: 0 !important;
     color: #fff;
 
     &:hover {
-        color: #fff;
+        animation: logo 2s ease-in-out infinite;
+    }
+}
+
+@keyframes logo {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
 
@@ -63,6 +80,9 @@ header,
     a {
         color: #fff;
     }
+
+    margin: 0 !important;
+    padding-right: 0 !important;
 }
 
 .navbar-expand-lg {
@@ -144,6 +164,12 @@ header,
 }
 
 .carousel-indicators {
+    li {
+        position: relative;
+        bottom: 5px;
+        right: auto;
+        left: auto;
+    }
     .active {
         background: $light-blue;
     }
@@ -194,6 +220,9 @@ header,
 
 // Services
 
+#service-area {
+    min-height: 90vh;
+}
 .service-box {
     text-align: center;
     margin-bottom: 35px;
@@ -232,6 +261,7 @@ header,
     p {
         font-size: 20px;
         color: #444;
+        text-indent: 20px;
     }
 
     .recy-title {
@@ -253,7 +283,7 @@ header,
 // Work with us
 
 #apply-area {
-    height: 520px;
+    min-height: 520px;
 
     .container-fluid,
     .row {
@@ -266,7 +296,6 @@ header,
     }
 
     #pattern-img {
-
         h4,
         p {
             color: #fff;
@@ -274,7 +303,7 @@ header,
 
         h4 {
             font-family: "Akshar", sans-serif;
-            font-size: 3.5em;
+            font-size: 3em;
             margin-top: 8%;
             margin-bottom: 40px;
             text-transform: uppercase;
@@ -288,6 +317,7 @@ header,
 
     #apply-btn {
         display: block;
+
         height: auto;
         width: 180px;
         margin-left: auto;
@@ -302,7 +332,6 @@ header,
         }
     }
 }
-
 
 // Call to action
 
@@ -391,17 +420,18 @@ header,
 
 #contact-form {
     .form-control {
-        margin-bottom: 0px;
+        margin-bottom: 15px;
         border-radius: 0;
     }
 
     label {
-            text-align: left;
-            font-size: 18px;
-            font-weight: bold;
-            font-family: "Akshar", sans-serif;
-            margin-right: 90%;
-        }
+        text-align: left;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Akshar", sans-serif;
+        margin-right: 90%;
+        margin-bottom: 0;
+    }
 
     .main-btn {
         width: 120px;
@@ -441,224 +471,269 @@ header,
 
 // Responsivity
 
-//  Tablets
+// Extra large (>=1200px)
 
-@media (max-width: 768px) {
-    // Geral
-
-    .container {
-        padding: 20px 0;
+@media (min-width: 1200px) {
+    // geral
+    .main-title {
+        font-size: 52px;
     }
 
-    // Slider
-
-    #mainSlider {
-        .carousel-inner,
-        .carousel-item {
-            height: auto;
+    // header
+    .navbar {
+        .nav-link {
+            font-size: 1.25em;
         }
 
+        .navbar-brand {
+            font-size: 3em;
+        }
+    }
+
+    #mainSlider {
         .carousel-caption {
-            left: 10%;
-            right: 10%;
+            top: 20%;
+            right: 4%;
+            left: 4%;
 
             h2 {
-                font-size: 28px;
+                font-size: 84px;
             }
 
             p {
-                font-size: 18px;
+                font-size: 32px;
+            }
+
+            .main-btn {
+                font-size: 24px;
+            }
+        }
+    }
+    // About area
+    #about-area {
+        img {
+            height: 100%;
+        }
+        .about-title {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+    // apply
+    #pattern-img {
+        p {
+            font-size: 18px !important;
+        }
+        .main-btn {
+            font-size: 18px !important;
+        }
+    }
+    // serviços
+    .service-box {
+        h4 {
+            font-size: 34px;
+        }
+        p {
+            font-size: 20px !important;
+        }
+    }
+    // Contato
+    #contact-area {
+        .contact-box {
+            i {
+                width: 75px;
+                height: 75px;
+                line-height: 75px;
+            }
+
+            p {
+                font-size: 24px;
+            }
+
+            .contact-title {
+                font-size: 24px;
+            }
+        }
+
+        #msg-box {
+            p {
+                font-size: 36px !important;
+            }
+        }
+
+        #contact-form {
+            label {
+                font-size: 24px;
+            }
+        }
+
+        .form-control {
+            min-height: 45px;
+            &::placeholder {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+// Large (>= 992px)
+
+@media (max-width: 1200px) {
+    // Carousel
+    #mainSlider {
+        .carousel-caption {
+            left: 5%;
+            right: 5%;
+
+            p {
                 margin-bottom: 40px;
+            }
+
+            .main-btn {
+                font-size: 20px;
+            }
+        }
+    }
+    // Call-to-action
+    #call-area {
+        .container {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+// Medium (>= 768px)
+
+@media (max-width: 992px) {
+    // carousel
+    #mainSlider {
+        .carousel-item,
+        .carousel-inner {
+            height: auto;
+            width: 100vw !important;
+            margin: 0 !important;
+        }
+        .carousel-caption {
+            h2 {
+                line-height: 1em;
+            }
+
+            p {
+                line-height: 1.25em;
+            }
+
+            .d-block {
+                padding-bottom: 0 !important;
             }
         }
     }
 
-    // About
-
+    // About area
     #about-area {
         img {
-            margin-top: 100px;
+            margin-top: 75px;
+            height: 300px;
         }
     }
 
-    // Data
-    .circle-box {
-        div {
-            padding: 0 10px;
+    // Recycle info
+    #recycle-info {
+        .recy-title {
+            font-size: 42px;
+        }
+        #ciclo-reciclagem {
+            margin-top: 125px;
         }
     }
-
-    #data-area {
+    // Call area
+    #call-area {
         p {
             font-size: 16px;
         }
-    }
-
-    // Team
-    .card-title {
-        font-size: 14px;
-    }
-    .card-text {
-        font-size: 12px;
-    }
-
-    // Apply
-    #apply-area {
-        .apply-box {
-            padding: 50px 25px;
-        }
-    }
-
-    // News
-    #news-area {
-        p {
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-
-    #email-input {
-        width: 70%;
-    }
-
-    #call-area {
-        margin-top: 30px;
-
-        .container {
-            padding: 30px;
-        }
-
-        p,
-        #call-btn {
+        .main-btn {
             font-size: 16px;
         }
     }
 }
 
-@media (max-width: 425px) {
-    // Slider
+// Small (>= 576px)
 
-    .main-title {
-        font-size: 30px;
-        margin-top: 30px;
-
-        &::after {
-            margin-top: 30px;
-        }
-    }
-
+@media (max-width: 768px) {
+    // carousel
     #mainSlider {
-        margin-top: 90px;
-
         .carousel-caption {
-            top: 5%;
+            top: 35%;
 
             h2 {
-                font-size: 18px;
-                margin-bottom: 40px;
+                font-size: 54px;
+                line-height: 0.8em;
             }
-
             p {
-                display: none;
+                font-size: 20px;
+                line-height: 0.8em;
             }
-
             .main-btn {
                 font-size: 14px;
             }
         }
     }
 
-    // About
+    // About area
     #about-area {
         img {
-            width: 95%;
             margin-top: 0;
             margin-bottom: 30px;
         }
     }
 
-    // Data-area
-    .circle-box {
-        width: 50%;
-
-        &:nth-child(1),
-        &:nth-child(2) {
-            margin-bottom: 30px;
-        }
-    }
-
-    // Team
-    #team-area {
-        .card-title {
-            font-size: 18px;
-        }
-
-        .col-md-3 {
-            width: 50%;
-            margin-bottom: 30px;
-        }
-    }
-
-    // apply
-    #apply-area {
-        height: auto;
-    }
-
+    // company image
     #company-img {
         display: none;
     }
 
-    // Filter
-    #portfolio-area {
-        .filter-btn {
-            margin-bottom: 20px;
-        }
-
-        .project-box {
-            width: 50%;
+    // Call area
+    #call-area {
+        height: 150px;
+        display: flex;
+        align-items: center;
+    }
+    // Contact-area
+    #contact-area {
+        .main-title {
+            font-size: 42px;
         }
     }
+}
 
-    // News
-    #news-area {
-        .main-title {
-            font-size: 24px;
+// Small (< 576px)
 
-            &::after {
-                margin-top: 0;
+@media (max-width: 576px) {
+    // Slider
+    #mainSlider {
+        .carousel-inner,
+        .carousel-item {
+            width: 100vw;
+            margin-right: 0 !important;
+        }
+        .carousel-caption {
+            p {
+                display: none;
+            }
+
+            h2 {
+                margin-bottom: 55px;
+            }
+            .main-btn {
+                font-size: 14px;
             }
         }
-
-        p {
-            font-size: 16px;
-        }
     }
-
-    #email-input {
-        width: 85%;
-    }
-
-    // Call-to-action
-    #call-area {
-        .container,
-        .row {
-            padding: 10px;
-        }
-
-        p,
-        #call-btn {
-            font-size: 14px;
-            letter-spacing: 0;
-            margin: 0;
-            width: 50%;
-        }
-    }
-
-    // Contact
-    .contact-box {
-        border: none;
-        margin-bottom: 0;
-        margin-top: 0;
-    }
+}
+// Phone
+@media (max-width: 500px) {
+    
 }

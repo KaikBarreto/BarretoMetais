@@ -8,14 +8,16 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 .row {
-  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .container {
-  padding: 70px 0;
+  padding: 70px 0px !important;
 }
 
 p,
@@ -28,26 +30,65 @@ header,
 .navbar {
   background: -webkit-gradient(linear, left top, right top, from(#003f74), to(#0076d0));
   background: linear-gradient(90deg, #003f74 0%, #0076d0 100%);
-}
-
-#nav-container {
-  padding-top: 0;
-  padding-bottom: 0;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  border-bottom: 3px solid #65daf9;
 }
 
 #logo {
-  width: 75px;
+  width: 60px;
+  height: 60px;
+}
+
+#nav-container {
+  padding: 0 !important;
 }
 
 .navbar-brand {
   font-size: 2rem;
   font-family: "Akshar", sans-serif;
-  padding: 0;
+  padding: 0 !important;
   color: #fff;
 }
 
 .navbar-brand:hover {
-  color: #fff;
+  -webkit-animation: logo 2s ease-in-out infinite;
+          animation: logo 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes logo {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes logo {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+#navbar-links {
+  margin: 0 !important;
+  padding-right: 0 !important;
 }
 
 #navbar-links a {
@@ -123,6 +164,13 @@ header,
   border-color: #65daf9;
 }
 
+.carousel-indicators li {
+  position: relative;
+  bottom: 5px;
+  right: auto;
+  left: auto;
+}
+
 .carousel-indicators .active {
   background: #65daf9;
 }
@@ -168,6 +216,10 @@ header,
   margin-right: 15px;
 }
 
+#service-area {
+  min-height: 90vh;
+}
+
 .service-box {
   text-align: center;
   margin-bottom: 35px;
@@ -202,6 +254,7 @@ header,
 #recycle-info p {
   font-size: 20px;
   color: #444;
+  text-indent: 20px;
 }
 
 #recycle-info .recy-title {
@@ -219,7 +272,7 @@ header,
 }
 
 #apply-area {
-  height: 520px;
+  min-height: 520px;
 }
 
 #apply-area .container-fluid,
@@ -239,7 +292,7 @@ header,
 
 #apply-area #pattern-img h4 {
   font-family: "Akshar", sans-serif;
-  font-size: 3.5em;
+  font-size: 3em;
   margin-top: 8%;
   margin-bottom: 40px;
   text-transform: uppercase;
@@ -348,7 +401,7 @@ header,
 }
 
 #contact-form .form-control {
-  margin-bottom: 0px;
+  margin-bottom: 15px;
   border-radius: 0;
 }
 
@@ -358,6 +411,7 @@ header,
   font-weight: bold;
   font-family: "Akshar", sans-serif;
   margin-right: 90%;
+  margin-bottom: 0;
 }
 
 #contact-form .main-btn {
@@ -395,144 +449,186 @@ header,
   color: #3ec1d5;
 }
 
-@media (max-width: 768px) {
-  .container {
-    padding: 20px 0;
+@media (min-width: 1200px) {
+  .main-title {
+    font-size: 52px;
   }
-  #mainSlider .carousel-inner,
-  #mainSlider .carousel-item {
-    height: auto;
+  .navbar .nav-link {
+    font-size: 1.25em;
+  }
+  .navbar .navbar-brand {
+    font-size: 3em;
   }
   #mainSlider .carousel-caption {
-    left: 10%;
-    right: 10%;
+    top: 20%;
+    right: 4%;
+    left: 4%;
   }
   #mainSlider .carousel-caption h2 {
-    font-size: 28px;
+    font-size: 84px;
   }
   #mainSlider .carousel-caption p {
-    font-size: 18px;
-    margin-bottom: 40px;
+    font-size: 32px;
+  }
+  #mainSlider .carousel-caption .main-btn {
+    font-size: 24px;
   }
   #about-area img {
-    margin-top: 100px;
+    height: 100%;
   }
-  .circle-box div {
-    padding: 0 10px;
+  #about-area .about-title {
+    font-size: 32px;
   }
-  #data-area p {
-    font-size: 16px;
+  #about-area p {
+    font-size: 18px;
   }
-  .card-title {
-    font-size: 14px;
+  #pattern-img p {
+    font-size: 18px !important;
   }
-  .card-text {
-    font-size: 12px;
+  #pattern-img .main-btn {
+    font-size: 18px !important;
   }
-  #apply-area .apply-box {
-    padding: 50px 25px;
+  .service-box h4 {
+    font-size: 34px;
   }
-  #news-area p {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+  .service-box p {
+    font-size: 20px !important;
   }
-  #email-input {
-    width: 70%;
+  #contact-area .contact-box i {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
   }
-  #call-area {
-    margin-top: 30px;
+  #contact-area .contact-box p {
+    font-size: 24px;
+  }
+  #contact-area .contact-box .contact-title {
+    font-size: 24px;
+  }
+  #contact-area #msg-box p {
+    font-size: 36px !important;
+  }
+  #contact-area #contact-form label {
+    font-size: 24px;
+  }
+  #contact-area .form-control {
+    min-height: 45px;
+  }
+  #contact-area .form-control::-webkit-input-placeholder {
+    font-size: 24px;
+  }
+  #contact-area .form-control:-ms-input-placeholder {
+    font-size: 24px;
+  }
+  #contact-area .form-control::-ms-input-placeholder {
+    font-size: 24px;
+  }
+  #contact-area .form-control::placeholder {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #mainSlider .carousel-caption {
+    left: 5%;
+    right: 5%;
+  }
+  #mainSlider .carousel-caption p {
+    margin-bottom: 40px;
+  }
+  #mainSlider .carousel-caption .main-btn {
+    font-size: 20px;
   }
   #call-area .container {
-    padding: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  #call-area p,
-  #call-area #call-btn {
+}
+
+@media (max-width: 992px) {
+  #mainSlider .carousel-item,
+  #mainSlider .carousel-inner {
+    height: auto;
+    width: 100vw !important;
+    margin: 0 !important;
+  }
+  #mainSlider .carousel-caption h2 {
+    line-height: 1em;
+  }
+  #mainSlider .carousel-caption p {
+    line-height: 1.25em;
+  }
+  #mainSlider .carousel-caption .d-block {
+    padding-bottom: 0 !important;
+  }
+  #about-area img {
+    margin-top: 75px;
+    height: 300px;
+  }
+  #recycle-info .recy-title {
+    font-size: 42px;
+  }
+  #recycle-info #ciclo-reciclagem {
+    margin-top: 125px;
+  }
+  #call-area p {
+    font-size: 16px;
+  }
+  #call-area .main-btn {
     font-size: 16px;
   }
 }
 
-@media (max-width: 425px) {
-  .main-title {
-    font-size: 30px;
-    margin-top: 30px;
-  }
-  .main-title::after {
-    margin-top: 30px;
-  }
-  #mainSlider {
-    margin-top: 90px;
-  }
+@media (max-width: 768px) {
   #mainSlider .carousel-caption {
-    top: 5%;
+    top: 35%;
   }
   #mainSlider .carousel-caption h2 {
-    font-size: 18px;
-    margin-bottom: 40px;
+    font-size: 54px;
+    line-height: 0.8em;
   }
   #mainSlider .carousel-caption p {
-    display: none;
+    font-size: 20px;
+    line-height: 0.8em;
   }
   #mainSlider .carousel-caption .main-btn {
     font-size: 14px;
   }
   #about-area img {
-    width: 95%;
     margin-top: 0;
     margin-bottom: 30px;
-  }
-  .circle-box {
-    width: 50%;
-  }
-  .circle-box:nth-child(1), .circle-box:nth-child(2) {
-    margin-bottom: 30px;
-  }
-  #team-area .card-title {
-    font-size: 18px;
-  }
-  #team-area .col-md-3 {
-    width: 50%;
-    margin-bottom: 30px;
-  }
-  #apply-area {
-    height: auto;
   }
   #company-img {
     display: none;
   }
-  #portfolio-area .filter-btn {
-    margin-bottom: 20px;
+  #call-area {
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  #portfolio-area .project-box {
-    width: 50%;
+  #contact-area .main-title {
+    font-size: 42px;
   }
-  #news-area .main-title {
-    font-size: 24px;
+}
+
+@media (max-width: 576px) {
+  #mainSlider .carousel-inner,
+  #mainSlider .carousel-item {
+    width: 100vw;
+    margin-right: 0 !important;
   }
-  #news-area .main-title::after {
-    margin-top: 0;
+  #mainSlider .carousel-caption p {
+    display: none;
   }
-  #news-area p {
-    font-size: 16px;
+  #mainSlider .carousel-caption h2 {
+    margin-bottom: 55px;
   }
-  #email-input {
-    width: 85%;
-  }
-  #call-area .container,
-  #call-area .row {
-    padding: 10px;
-  }
-  #call-area p,
-  #call-area #call-btn {
+  #mainSlider .carousel-caption .main-btn {
     font-size: 14px;
-    letter-spacing: 0;
-    margin: 0;
-    width: 50%;
-  }
-  .contact-box {
-    border: none;
-    margin-bottom: 0;
-    margin-top: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
