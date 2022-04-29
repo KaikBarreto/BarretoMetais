@@ -1,0 +1,50 @@
+#apply-area {
+    min-height: 520px;
+
+    .container-fluid,
+    .row {
+        height: 100%;
+    }
+
+    .apply-box {
+        text-align: center;
+        padding: 60px 50px;
+    }
+
+    #pattern-img {
+        h4,
+        p {
+            color: #fff;
+        }
+
+        h4 {
+            font-family: "Akshar", sans-serif;
+            font-size: 3em;
+            margin-top: 8%;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    }
+
+    #apply-btn {
+        display: block;
+
+        height: auto;
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        background-color: transparent;
+        border-color: #fff;
+
+        &:hover {
+            border-color: $light-blue;
+            background-color: $light-blue;
+        }
+    }
+}

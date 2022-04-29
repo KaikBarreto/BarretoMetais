@@ -1,0 +1,75 @@
+// Slider
+
+.container-fluid {
+    padding: 0;
+}
+
+#mainSlider {
+    .carousel-inner,
+    .carousel-item {
+        height: 90vh;
+    }
+
+    .carousel-caption {
+        top: 30%;
+
+        letter-spacing: 0.7px;
+
+        h2 {
+            font-family: "Akshar", sans-serif;
+            font-size: 70px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 30px;
+            font-weight: 300;
+            margin-bottom: 60px;
+            color: #fff;
+        }
+    }
+
+    .carousel-item {
+        img {
+            opacity: 0.9;
+            transition: 0.7s;
+        }
+
+        &:hover {
+            img {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.main-btn {
+    background: $light-blue;
+    color: #fff;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: 0.5s;
+
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+        background: transparent;
+        border-color: $light-blue;
+    }
+}
+
+.carousel-indicators {
+    li {
+        position: relative;
+        bottom: 5px;
+        right: auto;
+        left: auto;
+    }
+    .active {
+        background: $light-blue;
+    }
+}

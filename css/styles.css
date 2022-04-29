@@ -18,6 +18,14 @@ body {
 
 .container {
   padding: 70px 0px !important;
+  max-width: 70vw !important;
+}
+
+#about-area .container,
+#recycle-info .container,
+#services-area .container,
+#contact-area .container {
+  max-width: 100vw;
 }
 
 p,
@@ -400,6 +408,22 @@ header,
   font-size: 22px;
 }
 
+#contact-form input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+#contact-form input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+#contact-form input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+#contact-form input:focus::placeholder {
+  color: transparent;
+}
+
 #contact-form .form-control {
   margin-bottom: 15px;
   border-radius: 0;
@@ -410,7 +434,8 @@ header,
   font-size: 18px;
   font-weight: bold;
   font-family: "Akshar", sans-serif;
-  margin-right: 90%;
+  display: block;
+  text-align: left;
   margin-bottom: 0;
 }
 
@@ -472,9 +497,6 @@ header,
   }
   #mainSlider .carousel-caption .main-btn {
     font-size: 24px;
-  }
-  #about-area img {
-    height: 100%;
   }
   #about-area .about-title {
     font-size: 32px;
@@ -546,27 +568,40 @@ header,
 }
 
 @media (max-width: 992px) {
+  .main-title {
+    font-size: 42px;
+  }
+  #mainSlider .d-block {
+    height: 500px;
+  }
   #mainSlider .carousel-item,
   #mainSlider .carousel-inner {
     height: auto;
     width: 100vw !important;
     margin: 0 !important;
   }
+  #mainSlider .d-block.w-100 {
+    opacity: 1;
+  }
+  #mainSlider .carousel-caption {
+    top: 25%;
+  }
   #mainSlider .carousel-caption h2 {
     line-height: 1em;
+    margin-bottom: 10px;
   }
   #mainSlider .carousel-caption p {
     line-height: 1.25em;
+    margin-bottom: 30px;
   }
   #mainSlider .carousel-caption .d-block {
     padding-bottom: 0 !important;
   }
   #about-area img {
-    margin-top: 75px;
-    height: 300px;
+    margin-top: 100px;
   }
   #recycle-info .recy-title {
-    font-size: 42px;
+    font-size: 32px;
   }
   #recycle-info #ciclo-reciclagem {
     margin-top: 125px;
@@ -577,11 +612,20 @@ header,
   #call-area .main-btn {
     font-size: 16px;
   }
+  .contact-box p {
+    font-size: 14px;
+  }
+  #copy-area .container p {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 768px) {
+  #mainSlider .d-block {
+    height: 350px;
+  }
   #mainSlider .carousel-caption {
-    top: 35%;
+    top: 25%;
   }
   #mainSlider .carousel-caption h2 {
     font-size: 54px;
@@ -590,6 +634,7 @@ header,
   #mainSlider .carousel-caption p {
     font-size: 20px;
     line-height: 0.8em;
+    margin-bottom: 45px;
   }
   #mainSlider .carousel-caption .main-btn {
     font-size: 14px;
@@ -611,7 +656,10 @@ header,
             align-items: center;
   }
   #contact-area .main-title {
-    font-size: 42px;
+    font-size: 32px;
+  }
+  #contact-area .contact-box p {
+    font-size: 20px;
   }
 }
 
@@ -621,14 +669,58 @@ header,
     width: 100vw;
     margin-right: 0 !important;
   }
+  #mainSlider .carousel-inner .d-block {
+    height: 350px !important;
+  }
   #mainSlider .carousel-caption p {
     display: none;
   }
   #mainSlider .carousel-caption h2 {
-    margin-bottom: 55px;
+    margin-bottom: 35px;
   }
   #mainSlider .carousel-caption .main-btn {
     font-size: 14px;
+  }
+  #mainSlider .carousel-caption .main-btn.mais {
+    position: relative;
+    top: 75px;
+  }
+  .main-title {
+    font-size: 36px;
+  }
+  #pattern-img {
+    margin-top: -180px;
+  }
+  #services-area .container,
+  #contact-area .container {
+    max-width: 90vw;
+  }
+  #services-area .main-title,
+  #contact-area .main-title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  textarea {
+    min-height: 120px;
+  }
+  #call-area p {
+    line-height: 16px;
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+  #call-area #call-btn {
+    display: block;
+    height: 50px;
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 350px) {
+  .navbar-brand {
+    font-size: 1.5em;
   }
 }
 /*# sourceMappingURL=styles.css.map */

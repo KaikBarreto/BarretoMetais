@@ -1,0 +1,42 @@
+//  About the company
+
+#about-area {
+    background: #f9f9f9;
+}
+
+.main-title {
+    color: #444;
+    margin: 0 0 65px 0;
+    font-size: 46px;
+    text-align: center;
+
+    &::after {
+        content: "";
+        border-top: 2px solid #333;
+        width: 15%;
+        position: absolute;
+        top: 60px;
+        left: 42.5%;
+    }
+}
+
+.about-title {
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#about-list {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        line-height: 30px;
+    }
+
+    i {
+        color: $green;
+        margin-right: 15px;
+    }
+}

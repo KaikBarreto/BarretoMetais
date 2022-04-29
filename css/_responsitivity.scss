@@ -1,0 +1,363 @@
+// Responsivity
+
+// Extra large (>=1200px)
+
+@media (min-width: 1200px) {
+    // geral
+    .main-title {
+        font-size: 52px;
+    }
+
+    // header
+    .navbar {
+        .nav-link {
+            font-size: 1.25em;
+        }
+
+        .navbar-brand {
+            font-size: 3em;
+        }
+    }
+
+    #mainSlider {
+        .carousel-caption {
+            top: 20%;
+            right: 4%;
+            left: 4%;
+
+            h2 {
+                font-size: 84px;
+            }
+
+            p {
+                font-size: 32px;
+            }
+
+            .main-btn {
+                font-size: 24px;
+            }
+        }
+    }
+    // About area
+    #about-area {
+        .about-title {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+    // apply
+    #pattern-img {
+        p {
+            font-size: 18px !important;
+        }
+        .main-btn {
+            font-size: 18px !important;
+        }
+    }
+    // serviços
+    .service-box {
+        h4 {
+            font-size: 34px;
+        }
+        p {
+            font-size: 20px !important;
+        }
+    }
+    // Contato
+    #contact-area {
+        .contact-box {
+            i {
+                width: 75px;
+                height: 75px;
+                line-height: 75px;
+            }
+
+            p {
+                font-size: 24px;
+            }
+
+            .contact-title {
+                font-size: 24px;
+            }
+        }
+
+        #msg-box {
+            p {
+                font-size: 36px !important;
+            }
+        }
+
+        #contact-form {
+            label {
+                font-size: 24px;
+            }
+        }
+
+        .form-control {
+            min-height: 45px;
+            &::placeholder {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+// Large (>= 992px)
+
+@media (max-width: 1200px) {
+    // Carousel
+    #mainSlider {
+        .carousel-caption {
+            left: 5%;
+            right: 5%;
+
+            p {
+                margin-bottom: 40px;
+            }
+
+            .main-btn {
+                font-size: 20px;
+            }
+        }
+    }
+    // Call-to-action
+    #call-area {
+        .container {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+// Medium (>= 768px)
+
+@media (max-width: 992px) {
+    .main-title {
+        font-size: 42px;
+    }
+
+    // carousel
+    #mainSlider {
+        .d-block {
+            height: 500px;
+        }
+
+        .carousel-item,
+        .carousel-inner {
+            height: auto;
+            width: 100vw !important;
+            margin: 0 !important;
+        }
+
+        .d-block {
+            &.w-100 {
+                opacity: 1;
+            }
+        }
+
+        .carousel-caption {
+            top: 25%;
+
+            h2 {
+                line-height: 1em;
+                margin-bottom: 10px;
+            }
+
+            p {
+                line-height: 1.25em;
+                margin-bottom: 30px;
+            }
+
+            .d-block {
+                padding-bottom: 0 !important;
+            }
+        }
+    }
+
+    // About area
+    #about-area {
+        img {
+            margin-top: 100px;
+        }
+    }
+
+    // Recycle info
+    #recycle-info {
+        .recy-title {
+            font-size: 32px;
+        }
+        #ciclo-reciclagem {
+            margin-top: 125px;
+        }
+    }
+    // Call area
+    #call-area {
+        p {
+            font-size: 16px;
+        }
+        .main-btn {
+            font-size: 16px;
+        }
+    }
+
+    .contact-box {
+        p {
+            font-size: 14px;
+        }
+    }
+
+    #copy-area {
+        .container {
+            p {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+// Small (>= 576px)
+
+@media (max-width: 768px) {
+    // carousel
+    #mainSlider {
+        .d-block {
+            height: 350px;
+        }
+
+        .carousel-caption {
+            top: 25%;
+
+            h2 {
+                font-size: 54px;
+                line-height: 0.8em;
+            }
+            p {
+                font-size: 20px;
+                line-height: 0.8em;
+                margin-bottom: 45px;
+            }
+            .main-btn {
+                font-size: 14px;
+            }
+        }
+    }
+
+    // About area
+    #about-area {
+        img {
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+    }
+
+    // company image
+    #company-img {
+        display: none;
+    }
+
+    // Call area
+    #call-area {
+        height: 150px;
+        display: flex;
+        align-items: center;
+    }
+    // Contact-area
+    #contact-area {
+        .main-title {
+            font-size: 32px;
+        }
+
+        .contact-box {
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+// Small (< 576px)
+
+@media (max-width: 576px) {
+    // Slider
+    #mainSlider {
+        .carousel-inner,
+        .carousel-item {
+            width: 100vw;
+            margin-right: 0 !important;
+        }
+
+        .carousel-inner {
+            .d-block {
+                height: 350px !important;
+            }
+        }
+        .carousel-caption {
+            p {
+                display: none;
+            }
+
+            h2 {
+                margin-bottom: 35px;
+            }
+            .main-btn {
+                font-size: 14px;
+
+                &.mais {
+                    position: relative;
+                    top: 75px;
+                }
+            }
+        }
+    }
+
+    .main-title {
+        font-size: 36px;
+    }
+
+    #pattern-img {
+        margin-top: -180px;
+    }
+
+    #services-area,
+    #contact-area {
+        .container {
+            max-width: 90vw;
+        }
+
+        .main-title {
+            font-size: 24px;
+            line-height: 24px;
+        }
+    }
+
+    textarea {
+        min-height: 120px;
+    }
+
+    #call-area {
+        p {
+            line-height: 16px;
+            padding-bottom: 20px;
+            font-size: 16px;
+        }
+
+        #call-btn {
+            display: block;
+            height: 50px;
+            margin-left: 0;
+            margin-top: 20px;
+            font-size: 22px;
+            line-height: 22px;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+
+    .navbar-brand {
+        font-size: 1.5em;
+    }
+}
