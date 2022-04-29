@@ -76,7 +76,7 @@
             }
 
             p {
-                font-size: 24px;
+                font-size: 22px;
             }
 
             .contact-title {
@@ -333,10 +333,6 @@
         }
     }
 
-    textarea {
-        min-height: 120px;
-    }
-
     #call-area {
         p {
             line-height: 16px;
@@ -356,7 +352,6 @@
 }
 
 @media (max-width: 350px) {
-
     .navbar-brand {
         font-size: 1.5em;
     }

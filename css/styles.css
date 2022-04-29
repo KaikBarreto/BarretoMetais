@@ -369,6 +369,10 @@ header,
   text-align: center;
 }
 
+#contact-area textarea {
+  min-height: 120px;
+}
+
 .contact-box {
   padding-bottom: 50px;
   margin-bottom: 50px;
@@ -522,7 +526,7 @@ header,
     line-height: 75px;
   }
   #contact-area .contact-box p {
-    font-size: 24px;
+    font-size: 22px;
   }
   #contact-area .contact-box .contact-title {
     font-size: 24px;
@@ -699,9 +703,6 @@ header,
   #contact-area .main-title {
     font-size: 24px;
     line-height: 24px;
-  }
-  textarea {
-    min-height: 120px;
   }
   #call-area p {
     line-height: 16px;
