@@ -62,6 +62,12 @@
     }
 }
 
+.carousel-control-prev {
+    left: -5%;
+}
+.carousel-control-next {
+    right: -5%;
+}
 .carousel-indicators {
     li {
         position: relative;
