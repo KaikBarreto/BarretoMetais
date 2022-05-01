@@ -197,7 +197,7 @@ header,
 
 .main-title {
   color: #444;
-  margin: 0 0 65px 0;
+  margin: 0 0 25px 0;
   font-size: 46px;
   text-align: center;
 }
@@ -209,6 +209,11 @@ header,
   position: absolute;
   top: 60px;
   left: 42.5%;
+}
+
+#about-text {
+  font-size: 18px;
+  text-align: justify;
 }
 
 .about-title {
@@ -657,6 +662,9 @@ header,
     margin-top: 0;
     margin-bottom: 30px;
   }
+  #about-area {
+    font-size: 14px;
+  }
   #company-img {
     display: none;
   }
@@ -710,14 +718,19 @@ header,
   #pattern-img {
     margin-top: -180px;
   }
-  #services-area .container,
   #contact-area .container {
     max-width: 90vw;
   }
-  #services-area .main-title,
   #contact-area .main-title {
     font-size: 24px;
     line-height: 24px;
+  }
+  #services-area .container {
+    max-width: 90vw;
+  }
+  #services-area .main-title {
+    font-size: 28px;
+    line-height: 48px;
   }
   #call-area p {
     line-height: 16px;
