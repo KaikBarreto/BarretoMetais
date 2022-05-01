@@ -471,7 +471,7 @@ header,
 }
 
 #copy-area .container {
-  padding: 10px 0 !important;
+  padding: 10px 0 0 !important;
   text-align: center;
   max-width: 90vw;
 }
@@ -491,6 +491,34 @@ header,
 #copy-area .container a:hover {
   text-decoration: none;
   color: #3ec1d5;
+}
+
+.social-list {
+  padding-top: 15px;
+  padding-left: 0;
+  margin: 0 auto;
+  width: 100%;
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-list svg {
+  width: 16px;
+  height: 16px;
+  margin: 0 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.social-list svg:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: #65daf9;
 }
 
 @media (min-width: 1200px) {
@@ -683,6 +711,13 @@ header,
   #contact-area .contact-box p {
     font-size: 20px;
   }
+  #copy-area .container p {
+    font-size: 18px;
+  }
+  #copy-area .social-list svg {
+    width: 35px;
+    height: 20px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -718,18 +753,16 @@ header,
   #pattern-img {
     margin-top: -180px;
   }
-  #contact-area .container {
-    max-width: 90vw;
-  }
-  #contact-area .main-title {
-    font-size: 24px;
-    line-height: 24px;
-  }
+  #contact-area .container,
   #services-area .container {
     max-width: 90vw;
   }
+  #contact-area .main-title,
   #services-area .main-title {
-    font-size: 28px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  #services-area .main-title {
     line-height: 48px;
   }
   #call-area p {

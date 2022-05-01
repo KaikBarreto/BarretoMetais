@@ -280,6 +280,21 @@
             }
         }
     }
+
+    #copy-area {
+        .container {
+            p {
+                font-size: 18px;
+            }
+        }
+
+        .social-list {
+            svg {
+                width: 35px;
+                height: 20px;
+            }
+        }
+    }
 }
 
 // Small (< 576px)
@@ -333,7 +348,8 @@
         margin-top: -180px;
     }
 
-    #contact-area {
+    #contact-area,
+    #services-area {
         .container {
             max-width: 90vw;
         }
@@ -345,12 +361,7 @@
     }
 
     #services-area {
-        .container {
-            max-width: 90vw;
-        }
-
         .main-title {
-            font-size: 28px;
             line-height: 48px;
         }
     }
