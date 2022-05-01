@@ -84,7 +84,7 @@
 // Copy
 
 #copy-area {
-    background: #dfdfdf;
+    background: #1c2431;
 
     .container {
         padding: 10px 0 0 !important;
@@ -92,13 +92,14 @@
         max-width: 90vw;
 
         p {
+            color: #777;
             font-size: 20px;
             margin-bottom: 0;
         }
 
         a {
             font-weight: bold;
-            color: #444;
+            color: #fff;
             transition: 0.35s;
 
             &:hover {
@@ -119,10 +120,11 @@
     justify-content: center;
 
     svg {
+        color: #fff;
         width: 16px;
         height: 16px;
         margin: 0 15px;
-        transition: 1s;
+        transition: 0.5s;
 
         &:hover {
             transform: scale(1.5);
