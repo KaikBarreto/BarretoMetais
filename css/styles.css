@@ -43,11 +43,6 @@ header,
   border-bottom: 3px solid #65daf9;
 }
 
-#logo {
-  width: 60px;
-  height: 60px;
-}
-
 #nav-container {
   padding: 0 !important;
 }
@@ -62,6 +57,10 @@ header,
 .navbar-brand:hover {
   -webkit-animation: logo 2s ease-in-out infinite;
           animation: logo 2s ease-in-out infinite;
+}
+
+#logo {
+  padding: 0 !important;
 }
 
 @-webkit-keyframes logo {
@@ -270,6 +269,65 @@ header,
 .service-box:hover i,
 .service-box:hover h4 {
   color: #76b041;
+}
+
+#social-media .container-fluid {
+  border-radius: 50px;
+}
+
+#social-medias-index {
+  background: #1c2431;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.socialmedias-index-title {
+  font-family: "Akshar", sans-serif;
+  font-size: 3em;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #3ec1d5;
+}
+
+.socialmediacard {
+  padding: 20px;
+  background: #1c2431;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.socialmediacard a img {
+  width: 70px;
+  height: 70px;
+}
+
+.socialmedia-title {
+  font-family: "Akshar", sans-serif;
+  font-size: 2em;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #3ec1d5;
 }
 
 #recycle-info p {
@@ -698,6 +756,10 @@ header,
   #about-area img {
     margin-top: 0;
     margin-bottom: 30px;
+  }
+  .socialmediacard {
+    padding-top: 0;
+    padding-bottom: 0;
   }
   #about-area {
     font-size: 14px;

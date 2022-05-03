@@ -9,8 +9,6 @@ header,
 }
 
 #logo {
-    width: 60px;
-    height: 60px;
 }
 
 #nav-container {
@@ -27,6 +25,10 @@ header,
     &:hover {
         animation: logo 2s ease-in-out infinite;
     }
+}
+
+#logo {
+    padding: 0 !important;
 }
 
 @keyframes logo {

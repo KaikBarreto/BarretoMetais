@@ -1,0 +1,55 @@
+// Redes sociais
+
+#social-media {
+    .container-fluid {
+        border-radius: 50px;
+    }
+}
+
+#social-medias-index {
+    background: #1c2431;
+    padding: 10px 30px;
+
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialmedias-index-title {
+    font-family: "Akshar", sans-serif;
+    font-size: 3em;
+    letter-spacing: 1px;
+    text-align: center;
+
+    color: #3ec1d5;
+}
+
+.socialmediacard {
+    padding: 20px;
+
+    background: #1c2431;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    a {
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
+
+.socialmedia-title {
+    font-family: "Akshar", sans-serif;
+    font-size: 2em;
+    letter-spacing: 1px;
+    text-align: center;
+
+    color: #3ec1d5;
+}
