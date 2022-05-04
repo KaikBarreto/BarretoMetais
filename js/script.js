@@ -1,7 +1,7 @@
 // Parallax
 
 setTimeout(function () {
-    $('#pattern-img').parallax({ imageSrc: 'img/pattern.png' })
+    $('#pattern-img').parallax({ imageSrc: './img/pattern.png' })
     $('#company-img').parallax({ imageSrc: './img/planeta.jpg' })
 }, 250)
 
