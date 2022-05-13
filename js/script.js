@@ -28,3 +28,16 @@ function Enviar() {
     document.getElementById("msg-box").focus()
 
 }
+
+ScrollReveal({
+    origin: 'left',
+    distance: '50px',
+    duration: 1000
+}).reveal(`
+    #about-area, 
+    #social-media,
+    #recycle-info,
+    #services-area,
+    #call-area,
+    #contact-area,
+    #copy-area`)
